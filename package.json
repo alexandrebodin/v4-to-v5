@@ -1,0 +1,13 @@
+{
+  "name": "v4-to-v5",
+  "private": true,
+  "scripts": {
+    "build": "turbo build"
+  },
+  "author": "Alexandre BODIN <bodin.alex@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^2.1.1"
+  },
+  "packageManager": "pnpm@9.9.0"
+}

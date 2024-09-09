@@ -1,0 +1,15 @@
+{
+  "name": "@v4-to-v5/plugin-basic",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi plugin",
+  "devDependencies": {
+    "@strapi/strapi": "5.0.0-rc.19"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "basic",
+    "displayName": "Basic",
+    "description": "A basic plugin"
+  }
+}
