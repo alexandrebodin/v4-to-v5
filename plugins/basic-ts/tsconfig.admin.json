@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/admin",
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": false,
+    "sourceMap": true,
+    "jsx": "react"
+  },
+  "include": ["admin/**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -16,6 +16,7 @@
     "@strapi/strapi": "5.0.0-rc.19",
     "@v4-to-v5/plugin-basic": "workspace:*",
     "@v4-to-v5/plugin-basic-exports": "workspace:*",
+    "@v4-to-v5/plugin-basic-ts": "workspace:*",
     "better-sqlite3": "9.4.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

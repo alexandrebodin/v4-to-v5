@@ -1,3 +1,5 @@
+const { Icon } = require("./icon");
+
 /** @type import('@strapi/strapi/admin').PluginDefinition */
 const plugin = {
   register(app) {
@@ -7,24 +9,20 @@ const plugin = {
     });
 
     app.addMenuLink({
-      id: "basic",
-      title: {
-        id: "basic.plugin.title",
-        defaultMessage: "Basic Plugin",
-      },
       intlLabel: {
         id: "basic.plugin.title",
         defaultMessage: "Basic Plugin",
       },
-      to: "/basic",
-      icon: () => "Basic",
+      to: "basic",
+      icon: Icon,
       async Component() {
         return {
           default: () => "Hello from basic plugin!",
         };
       },
+      permissions: [],
     });
   },
 };
 
-export default plugin;
+module.exports = plugin;

@@ -1,3 +1,5 @@
+import Icon from "./icon";
+
 /** @type import('@strapi/strapi/admin').PluginDefinition */
 const plugin = {
   register(app) {
@@ -7,22 +9,18 @@ const plugin = {
     });
 
     app.addMenuLink({
-      id: "basic-exports",
-      title: {
-        id: "basic.plugin.title",
-        defaultMessage: "Basic Plugin",
-      },
       intlLabel: {
-        id: "basic.plugin.title",
-        defaultMessage: "Basic Plugin",
+        id: "basic-exports.plugin.title",
+        defaultMessage: "Basic export Plugin",
       },
-      to: "/basic-exports",
-      icon: () => "Basic exports",
+      to: "basic-exports",
+      icon: Icon,
       async Component() {
         return {
           default: () => "Hello from basic exports plugin!",
         };
       },
+      permissions: [],
     });
   },
 };
