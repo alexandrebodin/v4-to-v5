@@ -1,0 +1,37 @@
+{
+  "name": "@v4-to-v5/plugin-basic-sdk-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi plugin",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "source": "./admin/index.js",
+      "import": "./dist/admin.mjs",
+      "require": "./dist/admin.js",
+      "default": "./dist/admin.mjs"
+    },
+    "./strapi-server": {
+      "source": "./server/index.js",
+      "import": "./dist/server.mjs",
+      "require": "./dist/server.js",
+      "default": "./dist/server.js"
+    }
+  },
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.2.1",
+    "@strapi/strapi": "5.0.0-rc.19",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "basic-sdk-plugin",
+    "displayName": "Basic - sdk-plugin",
+    "description": "A basic sdk-plugin plugin"
+  }
+}

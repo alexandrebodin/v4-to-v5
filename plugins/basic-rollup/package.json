@@ -1,0 +1,27 @@
+{
+  "name": "@v4-to-v5/plugin-basic-rollup",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi plugin",
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
+    "@strapi/strapi": "5.0.0-rc.19",
+    "@types/react": "^18",
+    "react": "^18.0.0",
+    "rollup": "^4.21.2",
+    "typescript": "^5"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "basic-rollup",
+    "displayName": "Basic - rollup",
+    "description": "A basic rollup plugin"
+  }
+}

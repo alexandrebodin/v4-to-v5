@@ -8,11 +8,12 @@ export default (config: UserConfig) => {
         "@v4-to-v5/plugin-basic/strapi-admin",
         "@v4-to-v5/plugin-basic-exports/strapi-admin",
         "@v4-to-v5/plugin-basic-ts/strapi-admin",
+        "@v4-to-v5/plugin-basic-rollup/strapi-admin",
       ],
     },
     build: {
       commonjsOptions: {
-        include: [/plugins\/(.*)\/strapi-admin/, /node_modules/],
+        include: [/plugins\/(plugin-basic|plugin-basic-exports|plugin-basic-ts|plugin-basic-rollup)\/strapi-admin/, /node_modules/],
       },
     },
   });

@@ -1,5 +1,5 @@
 import type { PluginDefinition } from "@strapi/strapi/admin";
-import Icon from "./Icon";
+import Icon from "./icon";
 
 const plugin: PluginDefinition = {
   register(app) {
